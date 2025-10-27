@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, 'Open Sans', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+}
+header p{
+    
+}
+header span{
+    font-size: 16px;
+    color: #70757a;
+    padding: 8px;
+    cursor: pointer;
+}
+header .mail:hover{
+    background-color: #f1f3F4;
+    
+ 
+}
+.google-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    letter-spacing: 10px;
+    font-weight: 800;
+    font-size: 120px;
+}
+.g{
+    color: #4285F4;
+}
+.o1 {
+    color: #E44335;
+}
+.o{
+    color: #FBBC05;
+}
+.l{
+    color: #34A853;
+}
+.e{
+    color: #E44335;
+}
+.barre-de-recherche{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ 
+    padding: 50px 20px;
+    width: 100%;
+    height: 1vh;
+
+}
+.barre-de-recherche input{
+    width: 30%;
+    padding: 25px;
+    left: 59px;
+    border-radius: 20px;
+    height: 4vh;
+    font-size: 25px;
+}
+.barre-de-recherche input:focus{
+    outline: none;
+    border: 2px solid #4285F4; /* bleu Google */
+    box-shadow: 0 0 5px rgba(66,133,244,0.5);
+}
+/* .barre-de-recherche i{
+    top: 50%;
+    left: 30px;
+    position: relative;
+} */
+.bouton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+button{
+    padding: 5px;
+    border-radius: 15px;
+    width: 7%;
+    font-weight: bold; 
+    border-color: #a6a7a7;
+}
+button:hover{
+    color:  #34A853;
+    background-color: #f1f3F4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+.localisation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+footer .contener{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.none{
+    list-style-type: none;
+    padding: 10px;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+@media (max-width: 1440px){
+    .barre-de-recherche input{
+        width: 40%;
+    }
+    button{
+        font-size: 9px;
+    }
+}
+@media(max-width: 1024px){
+    .barre-de-recherche input{
+        width: 60%;
+    }
+    button {
+        font-size: 12px;
+        width: 12%;
+    }
+    .bouton{
+        gap: 8px;
+    
+    }
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        width: 96%;
+    }
+}
+@media (max-width: 768px) {
+    header{
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .google-logo{
+        font-size: 60px;
+        height: auto;
+        letter-spacing: 5px;
+    }
+    .barre-de-recherche input{
+        width: 40%;
+        font-size: 18px;
+        padding: 15px;
+    }
+    button{
+        width: 14%;
+        font-size: 8px;
+        padding: 10px;
+    }
+     .bouton{
+        flex-direction: row;
+        height: 1vh;
+     }
+     .localisation p{
+        margin-top: 20px;        
+     }
+     footer ul{
+        flex-direction: row;
+        text-align: center;
+        gap: 16px;
+
+     }
+     @media (max-width: 425px) {
+        button {
+            width: 24%;
+            font-size: 8px;
+        }
+        .barre-de-recherche input{
+            width: 90%;
+     }
+     .google-logo{
+        letter-spacing: px;
+        padding: 0;
+        margin: 0;
+     }
+     .barre-de-recherche{
+        padding: 40px 35px;
+     }
+     @media (max-width: 375px) {
+        button {
+            width: 28%;
+        }
+        .barre-de-recherche input {
+            width: 100%;
+        }
+        @media (max-width: 320px) {
+ 
+            button {
+                width: 30%;
+            }
+        .localisation {
+            font-size: 13px;
+        }
+        .contener {
+            font-size: 13px;
+        }
+        .google-logo {
+            letter-spacing: 2px;
+        }
+     }
+    /* .barre-de-recherche{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .barre-de-recherche input{
+        width: 70%;
+    }
+    .google-logo{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    
+    } */
+}
